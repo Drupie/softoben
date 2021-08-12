@@ -1,0 +1,89 @@
+main {
+    width: 100%;
+    & .main__buttons--floats{
+        width: 60%;
+        height: 300px;
+        margin:0 auto;
+      
+        position: relative;
+        top: -100px;
+        z-index: 4;
+        display: grid;
+        grid-template-columns:20% 20% 20% 20% 20%;
+        grid-template-rows:50px 50px 50px 50px 50px ;
+        z-index: 2;
+        background-color: rgba(0, 0, 0, 0.5);
+        padding: 20px;
+        border-radius: 30px;
+    }
+    & .main__buttons--floats div:nth-child(1){
+        width: 40px;
+        height: 40px;
+      
+        grid-column-start:1;
+        grid-column-end:2;
+        grid-row-start:1;
+        grid-row-end:2;
+    }
+    & .main__buttons--floats div:nth-child(2){
+        width: 40px;
+        height: 40px;
+       
+        grid-column-start:5;
+        grid-column-end:5;
+        grid-row-start:1;
+        grid-row-end:2;
+    }
+    & .main__buttons--floats div:nth-child(3){
+        width: 40px;
+        height: 40px;
+        
+        grid-column-start:1;
+        grid-column-end:1;
+        grid-row-start:5;
+        grid-row-end:5;
+    }
+    & .main__buttons--floats div:nth-child(4){
+        width: 40px;
+        height: 40px;
+      
+        grid-column-start:5;
+        grid-column-end:5;
+        grid-row-start:5;
+        grid-row-end:5;
+    }
+    
+    .main__buttons--floats a{
+        color: #fafafa;
+        width: 50px;
+        height: 50px;
+        background-color: #60a3bc;
+        
+        display: block;
+        text-align: center;
+        border-radius: 50%;
+        padding: 10px;
+    }
+    & .main__branding--name{
+        width: 90%;
+        height: 100px;
+        display: grid;
+        grid-template-columns:20% 20% 20% 20% 20%;
+        grid-template-rows:20px 20px 20px 20px 20px ;
+        margin: 0 auto;
+        margin-bottom: 100px;
+        border-bottom: 5px solid #eb2f06;
+    }
+    .main__branding--name h1{
+        grid-column-start:1;
+        grid-column-end:6;
+        grid-row-start:3;
+        grid-row-end:5;
+        text-align: center;
+        color:#eb2f06;
+        letter-spacing: 10px;
+        font-family: 'Prompt', sans-serif;
+       
+       
+    }
+}
